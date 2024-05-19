@@ -1,0 +1,31 @@
+{
+	"image": "thelastofus.jpeg",
+	"title": "The Last Of Us",
+	"description": "Joel ed Ellie, una coppia connessa per la durezza del mondo in cui vivono, sono costretti a sopportare circostanze brutali e spietati assassini in un viaggio attraverso l'America dopo la pandemia.",
+	"year": 2023,
+	"country": "Stati Uniti",
+	"director": "Craig Mazin",
+	"seasons": 1,
+	"episodes": 9,
+	"genre": ["Azione", "Avventura", "Drammatico", "Test"],
+	"season": [{ "season_num": 1, "episodes": 9 }],
+	"episode": [
+		{
+			"season_num": 1,
+			"ep_num": 1,
+			"ep_title": "Quando sei perso nell'oscurità"
+		},
+		{ "season_num": 1, "ep_num": 2, "ep_title": "Gli infetti" },
+		{ "season_num": 1, "ep_num": 3, "ep_title": "Molto, molto tempo" },
+		{
+			"season_num": 1,
+			"ep_num": 4,
+			"ep_title": "Per favore, stringimi la mano"
+		},
+		{ "season_num": 1, "ep_num": 5, "ep_title": "Resistere e sopravvivere" },
+		{ "season_num": 1, "ep_num": 6, "ep_title": "Famiglia" },
+		{ "season_num": 1, "ep_num": 7, "ep_title": "Abbandonata" },
+		{ "season_num": 1, "ep_num": 8, "ep_title": "Quando sei in difficoltà" },
+		{ "season_num": 1, "ep_num": 8, "ep_title": "Cerca la Luce" }
+	]
+}

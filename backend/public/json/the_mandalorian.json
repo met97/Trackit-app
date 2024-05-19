@@ -1,0 +1,46 @@
+{
+	"image": "themandalorian.jpg",
+	"title": "The Mandalorian",
+	"description": "Dopo la caduta dell'Impero e prima dell'ascesa al potere del Primo Ordine, un combattente solitario viagga ai margini della galassia, lontano dall'influenza della Nuova Repubblica.",
+	"year": 2019,
+	"country": "Stati Uniti",
+	"director": "Jon Favreau",
+	"seasons": 3,
+	"episodes": 24,
+	"genre": ["Azione", "Avventura", "Fantascienza"],
+	"season": [
+		{ "season_num": 1, "episodes": 8 },
+		{ "season_num": 2, "episodes": 8 },
+		{ "season_num": 3, "episodes": 8 }
+	],
+	"episode": [
+		{ "season_num": 1, "ep_num": 1, "ep_title": "Chapter 1: The Mandalorian" },
+		{ "season_num": 1, "ep_num": 2, "ep_title": "Chapter 2: The Child" },
+		{ "season_num": 1, "ep_num": 3, "ep_title": "Chapter 3: The Sin" },
+		{ "season_num": 1, "ep_num": 4, "ep_title": "Chapter 4: Sanctuary" },
+		{ "season_num": 1, "ep_num": 5, "ep_title": "Chapter 5: The Gunslinger" },
+		{ "season_num": 1, "ep_num": 6, "ep_title": "Chapter 6: The Prisoner" },
+		{ "season_num": 1, "ep_num": 7, "ep_title": "Chapter 7: The Reckoning" },
+		{ "season_num": 1, "ep_num": 8, "ep_title": "Chapter 8: Redemption" },
+		{ "season_num": 2, "ep_num": 1, "ep_title": "Chapter 9: The Marshal" },
+		{ "season_num": 2, "ep_num": 2, "ep_title": "Chapter 10: The Passenger" },
+		{ "season_num": 2, "ep_num": 3, "ep_title": "Chapter 11: The Heiress" },
+		{ "season_num": 2, "ep_num": 4, "ep_title": "Chapter 12: The Siege" },
+		{ "season_num": 2, "ep_num": 5, "ep_title": "Chapter 13: The Jedi" },
+		{ "season_num": 2, "ep_num": 6, "ep_title": "Chapter 14: The Tragedy" },
+		{ "season_num": 2, "ep_num": 7, "ep_title": "Chapter 15: The Believer" },
+		{ "season_num": 2, "ep_num": 8, "ep_title": "Chapter 16: The Rescue" },
+		{ "season_num": 3, "ep_num": 1, "ep_title": "Chapter 17: The Apostate" },
+		{
+			"season_num": 3,
+			"ep_num": 2,
+			"ep_title": "Chapter 18: The Mines of Mandalore"
+		},
+		{ "season_num": 3, "ep_num": 3, "ep_title": "Chapter 19: The Convert" },
+		{ "season_num": 3, "ep_num": 4, "ep_title": "Chapter 20: The Foundling" },
+		{ "season_num": 3, "ep_num": 5, "ep_title": "Chapter 21: The Pirate" },
+		{ "season_num": 3, "ep_num": 6, "ep_title": "Chapter 22: Guns for Hire" },
+		{ "season_num": 3, "ep_num": 7, "ep_title": "Chapter 23: The Spies" },
+		{ "season_num": 3, "ep_num": 8, "ep_title": "Chapter 24: The Return" }
+	]
+}
