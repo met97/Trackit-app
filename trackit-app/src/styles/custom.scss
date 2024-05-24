@@ -1,5 +1,50 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+$primary-color: #e2dfd0;
+$secondary-color: #f8e559;
+$background-secondary: #521477;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+	color: $primary-color;
+}
+
+nav {
+	&.navbar {
+		background-color: $background-secondary !important;
+	}
+	.navbar-brand {
+		color: $secondary-color;
+		font-weight: bold;
+	}
+	.nav-link {
+		&.router-link-active {
+			color: $secondary-color;
+			text-decoration-line: underline;
+			text-underline-offset: 7px;
+		}
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+}
+
+.btn-primary {
+	color: $secondary-color;
+	background-color: $background-secondary;
+	border-color: $background-secondary;
+	&:hover {
+		border-color: $secondary-color;
+		background-color: $background-secondary;
+	}
+}
+
 h2 {
 	padding-top: 20px;
 	margin-bottom: 10px;

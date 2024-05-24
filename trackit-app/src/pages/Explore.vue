@@ -46,7 +46,7 @@ export default defineComponent({
 	<!-- Nav tabs -->
 	<div class="row mx-0">
 		<ul
-			class="nav nav-underline flex-nowrap overflow-auto"
+			class="nav nav-pills flex-nowrap overflow-auto"
 			id="genreTabs"
 			role="tablist">
 			<li class="nav-item" role="presentation">
@@ -82,7 +82,7 @@ export default defineComponent({
 	<!-- Tabs Content -->
 	<div class="row mx-0 tab-content">
 		<div
-			class="row row-cols-1 row-cols-md-2 g-3 tab-pane active"
+			class="row row-cols-1 row-cols-md-2 g-3 tab-pane fade active show"
 			id="all-genres"
 			role="tabpanel"
 			aria-labelledby="all-tab"
@@ -96,7 +96,7 @@ export default defineComponent({
 		<div
 			v-for="genre in genreList"
 			:key="genre.genre"
-			class="row row-cols-1 row-cols-md-2 g-3 tab-pane"
+			class="row row-cols-1 row-cols-md-2 g-3 tab-pane fade"
 			:id="genre.genre"
 			role="tabpanel"
 			:aria-labelledby="genre.genre + '-tab'"
@@ -111,15 +111,11 @@ export default defineComponent({
 </template>
 
 <style scope lang="scss">
-.nav-underline {
-	.nav-link.active {
-		color: #0d6efd;
-	}
+.nav {
 	.nav-link {
-		color: #6c757d;
-
-		&:hover {
-			color: #0d6efd;
+		color: #f8e559;
+		&.active {
+			background-color: #521477;
 		}
 	}
 }

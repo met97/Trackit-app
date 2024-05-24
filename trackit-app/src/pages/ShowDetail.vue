@@ -175,7 +175,7 @@ onMounted(async () => {
 				<img
 					:src="'/covers/' + showData[0].image"
 					class="img-fluid"
-					alt="..." />
+					:alt="showData[0].title + 'cover'" />
 			</div>
 		</div>
 		<!-- dettagli -->
@@ -339,4 +339,8 @@ onMounted(async () => {
 	</div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+.progress-bar {
+	background-color: #521477;
+}
+</style>

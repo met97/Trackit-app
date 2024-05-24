@@ -21,13 +21,11 @@ export default defineComponent({
 			axios
 				.get("/api/randshows/4")
 				.then(response => (this.featuredShow = response.data));
-			console.log(this.featuredShow);
 		},
 		getSuggestedList() {
 			axios
 				.get("/api/randshows/10")
 				.then(response => (this.suggestedShow = response.data));
-			console.log(this.suggestedShow);
 		},
 	},
 	mounted() {
@@ -42,12 +40,14 @@ export default defineComponent({
 	<!-- In Evidenza -->
 	<div class="row mx-0">
 		<h2>In evidenza</h2>
-		<div class="row row-cols-2 row-cols-lg-4 g-3 mt-0">
-			<featured_card
-				v-for="show in featuredShow"
-				:key="show.id"
-				:featured_card="show" />
-		</div>
+		<ul class="list-unstyled">
+			<div class="row row-cols-2 row-cols-lg-4 g-3 mt-0">
+				<featured_card
+					v-for="show in featuredShow"
+					:key="show.id"
+					:featured_card="show" />
+			</div>
+		</ul>
 	</div>
 	<!-- Suggeriti -->
 	<div class="row mx-0">
@@ -60,3 +60,5 @@ export default defineComponent({
 		</div>
 	</div>
 </template>
+
+<style scoped lang="scss"></style>

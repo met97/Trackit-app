@@ -21,13 +21,13 @@ export default defineComponent({
 						><img
 							:src="'/covers/' + show_card.image"
 							class="rounded-start"
-							:alt="show_card.title"
+							:alt="show_card.title + ' cover'"
 					/></router-link>
 				</div>
 				<div class="col-7">
 					<div class="card-body px-0 py-2">
-						<h5 class="card-title mb-0">{{ show_card.title }}</h5>
-						<p id="showcard-desc" class="card-text mb-0">
+						<h3 class="h5 card-title mb-0">{{ show_card.title }}</h3>
+						<p class="card-text mb-0 showcard-desc">
 							{{ show_card.description }}
 						</p>
 						<p class="card-text">
@@ -41,7 +41,7 @@ export default defineComponent({
 </template>
 
 <style scoped lang="scss">
-#showcard-desc {
+.showcard-desc {
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;

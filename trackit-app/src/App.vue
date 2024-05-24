@@ -24,8 +24,8 @@ const triggerLogin = async () => {
 };
 
 onMounted(async () => {
-	await fetchUsers();
-	await triggerLogin();
+	fetchUsers();
+	triggerLogin();
 });
 </script>
 
@@ -37,19 +37,14 @@ onMounted(async () => {
 				<!-- modal button -->
 				<button
 					type="button"
-					class="navbar-text d-md-none btn"
+					class="navbar-text d-md-none btn text-truncate"
 					data-bs-toggle="modal"
-					data-bs-target="#UserModal"
-					v-if="userStore.activeUser">
-					Utente: {{ userStore.activeUser.username }}
-				</button>
-				<button
-					type="button"
-					class="navbar-text d-md-none btn"
-					data-bs-toggle="modal"
-					data-bs-target="#UserModal"
-					v-else>
-					Login
+					data-bs-target="#UserModal">
+					{{
+						userStore.activeUser
+							? `Utente: ${userStore.activeUser.username}`
+							: "Login"
+					}}
 				</button>
 				<!-- nav toggle button -->
 				<button
@@ -74,21 +69,16 @@ onMounted(async () => {
 				</div>
 				<!-- modal button -->
 				<button
-					type="button"
-					class="navbar-text d-none d-md-inline btn"
-					data-bs-toggle="modal"
-					data-bs-target="#UserModal"
-					v-if="userStore.activeUser">
-					Utente: {{ userStore.activeUser.username }}
-				</button>
-				<button
-					type="button"
-					class="navbar-text d-none d-md-inline btn"
 					ref="loginButton"
+					type="button"
+					class="navbar-text d-none d-md-inline btn"
 					data-bs-toggle="modal"
-					data-bs-target="#UserModal"
-					v-else>
-					Login
+					data-bs-target="#UserModal">
+					{{
+						userStore.activeUser
+							? `Utente: ${userStore.activeUser.username}`
+							: "Login"
+					}}
 				</button>
 			</div>
 		</nav>

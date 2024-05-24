@@ -82,7 +82,8 @@ watch(activeUser, async newUser => {
 				type="button"
 				class="col-5 mx-auto btn btn-primary"
 				data-bs-toggle="modal"
-				data-bs-target="#UserModal">
+				data-bs-target="#UserModal"
+				aria-label="change user">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="16"

@@ -25,12 +25,12 @@ const { userList } = storeToRefs(userStore);
 				</div>
 				<div class="modal-body">
 					<div v-for="user in userList" :key="user.id">
-						<h2
-							class="fs-5 btn"
+						<button
+							class="h3 btn btn-primary"
 							@click="userStore.setActiveUser(user.id)"
 							data-bs-dismiss="modal">
 							{{ user.username }}
-						</h2>
+						</button>
 						<p>User ID: {{ user.id }} - Ruolo: {{ user.role }}</p>
 						<hr />
 					</div>
