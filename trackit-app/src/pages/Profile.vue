@@ -105,30 +105,36 @@ watch(activeUser, async newUser => {
 		<!-- Saved Shows -->
 		<div class="row" id="userwishlist">
 			<h2>Wishlist</h2>
-			<div class="row row-cols-2 row-cols-lg-4 g-3 mt-0">
-				<featured_card
-					v-for="show in wishlisted"
-					:key="show.id"
-					:featured_card="show" />
-			</div>
+			<ul class="list-unstyled">
+				<div class="row row-cols-2 row-cols-lg-4 g-3 mt-0">
+					<featured_card
+						v-for="show in wishlisted"
+						:key="show.id"
+						:featured_card="show" />
+				</div>
+			</ul>
 		</div>
 		<div class="row" id="userInProgress">
 			<h2>In corso</h2>
-			<div class="row row-cols-2 row-cols-lg-4 g-3 mt-0">
-				<featured_card
-					v-for="show in inProgress"
-					:key="show.id"
-					:featured_card="show" />
-			</div>
+			<ul class="list-unstyled">
+				<div class="row row-cols-2 row-cols-lg-4 g-3 mt-0">
+					<featured_card
+						v-for="show in inProgress"
+						:key="show.id"
+						:featured_card="show" />
+				</div>
+			</ul>
 		</div>
 		<div class="row" id="userCompleted">
 			<h2>Completati</h2>
-			<div class="row row-cols-2 row-cols-lg-4 g-3 mt-0">
-				<featured_card
-					v-for="show in completed"
-					:key="show.id"
-					:featured_card="show" />
-			</div>
+			<ul class="list-unstyled">
+				<div class="row row-cols-2 row-cols-lg-4 g-3 mt-0">
+					<featured_card
+						v-for="show in completed"
+						:key="show.id"
+						:featured_card="show" />
+				</div>
+			</ul>
 		</div>
 
 		<!-- Admin Dashboard -->
