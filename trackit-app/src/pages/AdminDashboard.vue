@@ -41,7 +41,7 @@ onMounted(async () => {});
 			<div class="col-12">
 				<h2>Aggiungi nuova Serie TV</h2>
 				<form id="newShowForm" class="mb-3">
-					<label for="jsonArea" class="form-label"
+					<label for="newShowInput" class="form-label"
 						>Inserire i dettagli della nuova serie in formato JSON</label
 					>
 					<textarea

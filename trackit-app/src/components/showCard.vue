@@ -26,7 +26,7 @@ export default defineComponent({
 				</div>
 				<div class="col-7">
 					<div class="card-body px-0 py-2">
-						<h3 class="h5 card-title mb-0">{{ show_card.title }}</h3>
+						<h5 class="card-title mb-0">{{ show_card.title }}</h5>
 						<p class="card-text mb-0 showcard-desc">
 							{{ show_card.description }}
 						</p>

@@ -60,11 +60,9 @@ onMounted(async () => {
 				<!-- nav menu -->
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
-						<router-link to="/" class="nav-link" aria-current="page"
-							>Home</router-link
-						>
-						<router-link to="/explore" class="nav-link">Explore</router-link>
-						<router-link to="/profile" class="nav-link">Profile</router-link>
+						<router-link to="/" class="nav-link">Home</router-link>
+						<router-link to="/explore" class="nav-link">Esplora</router-link>
+						<router-link to="/profile" class="nav-link">Profilo</router-link>
 					</div>
 				</div>
 				<!-- modal button -->

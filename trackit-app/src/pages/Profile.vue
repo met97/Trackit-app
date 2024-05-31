@@ -2,7 +2,6 @@
 import { Ref, ref, onMounted, watch } from "vue";
 // import componenti
 import featured_card from "../components/featuredCard.vue";
-import userModal from "../components/userModal.vue";
 // import types
 import { Show } from "../types";
 // other imports
@@ -70,11 +69,6 @@ watch(activeUser, async newUser => {
 
 <template>
 	<div class="container-fluid" :key="activeUser?.id">
-		<!-- DEBUG INFO -->
-		<!--<p>active user: {{ activeUser }}</p>
-		<p>active user id: {{ activeUser?.id }}</p>
-		<p>isadmin: {{ isAdmin }}</p>-->
-
 		<h1>Profilo</h1>
 		<!-- Change User -->
 		<div class="row">
@@ -100,40 +94,31 @@ watch(activeUser, async newUser => {
 			</button>
 		</div>
 		<!-- Modal -->
-		<user-modal />
+		<!-- (( Already loaded in App.vue )) -->
 
 		<!-- Saved Shows -->
 		<div class="row" id="userwishlist">
 			<h2>Wishlist</h2>
-			<ul class="list-unstyled">
-				<div class="row row-cols-2 row-cols-lg-4 g-3 mt-0">
-					<featured_card
-						v-for="show in wishlisted"
-						:key="show.id"
-						:featured_card="show" />
-				</div>
+			<ul class="list-unstyled row row-cols-2 row-cols-lg-4 g-3 mt-0">
+				<li v-for="show in wishlisted" :key="show.id">
+					<featured_card :featured_card="show" />
+				</li>
 			</ul>
 		</div>
 		<div class="row" id="userInProgress">
 			<h2>In corso</h2>
-			<ul class="list-unstyled">
-				<div class="row row-cols-2 row-cols-lg-4 g-3 mt-0">
-					<featured_card
-						v-for="show in inProgress"
-						:key="show.id"
-						:featured_card="show" />
-				</div>
+			<ul class="list-unstyled row row-cols-2 row-cols-lg-4 g-3 mt-0">
+				<li v-for="show in inProgress" :key="show.id">
+					<featured_card :featured_card="show" />
+				</li>
 			</ul>
 		</div>
 		<div class="row" id="userCompleted">
 			<h2>Completati</h2>
-			<ul class="list-unstyled">
-				<div class="row row-cols-2 row-cols-lg-4 g-3 mt-0">
-					<featured_card
-						v-for="show in completed"
-						:key="show.id"
-						:featured_card="show" />
-				</div>
+			<ul class="list-unstyled row row-cols-2 row-cols-lg-4 g-3 mt-0">
+				<li v-for="show in completed" :key="show.id">
+					<featured_card :featured_card="show" />
+				</li>
 			</ul>
 		</div>
 

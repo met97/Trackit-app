@@ -24,7 +24,7 @@ export async function getShows(req: Request, res: Response) {
 
 export async function getShowsByGenre(req: Request, res: Response) {
 	connection.execute(
-		`SELECT shg.show_id, shg.genre, t.image, t.title, 
+		`SELECT shg.show_id as id, shg.genre, t.image, t.title, 
 			t.description, t.year, t.country, t.director as director_id, 
     		d.name as director_name, t.seasons, t.episodes
 		FROM genre g

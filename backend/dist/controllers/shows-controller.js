@@ -30,7 +30,7 @@ function getShows(req, res) {
 exports.getShows = getShows;
 function getShowsByGenre(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
-        db_1.connection.execute(`SELECT shg.show_id, shg.genre, t.image, t.title, 
+        db_1.connection.execute(`SELECT shg.show_id as id, shg.genre, t.image, t.title, 
 			t.description, t.year, t.country, t.director as director_id, 
     		d.name as director_name, t.seasons, t.episodes
 		FROM genre g

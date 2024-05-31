@@ -20,7 +20,9 @@ export default defineComponent({
 	},
 	methods: {
 		getShows() {
-			axios.get("/api/shows").then(response => (this.datiShow = response.data));
+			axios.get("/api/shows").then(response => {
+				this.datiShow = response.data;
+			});
 		},
 		getGenres() {
 			axios
@@ -28,9 +30,9 @@ export default defineComponent({
 				.then(response => (this.genreList = response.data));
 		},
 		getShowsByGenre(genre: string) {
-			axios
-				.get("/api/shows/" + genre)
-				.then(response => (this.showsByGenre = response.data));
+			axios.get("/api/shows/" + genre).then(response => {
+				this.showsByGenre = response.data;
+			});
 		},
 	},
 	mounted() {
@@ -44,11 +46,9 @@ export default defineComponent({
 	<h1>Esplora</h1>
 
 	<!-- Nav tabs -->
-	<div class="row mx-0">
-		<ul
-			class="nav nav-pills flex-nowrap overflow-auto"
-			id="genreTabs"
-			role="tablist">
+	<div id="genreNav" class="row mx-0">
+		<h2 class="visually-hidden">Generi</h2>
+		<ul class="nav nav-pills flex-nowrap overflow-auto" role="tablist">
 			<li class="nav-item" role="presentation">
 				<button
 					class="nav-link active"
@@ -82,36 +82,38 @@ export default defineComponent({
 	<!-- Tabs Content -->
 	<div class="row mx-0 tab-content">
 		<div
-			class="row row-cols-1 row-cols-md-2 g-3 tab-pane fade active show"
+			class="tab-pane fade active show"
 			id="all-genres"
 			role="tabpanel"
 			aria-labelledby="all-tab"
 			tabindex="0">
-			<show_card
-				class="d-inline-block"
-				v-for="show in datiShow"
-				:key="show.id"
-				:show_card="show" />
+			<h3 class="visually-hidden">Tutti i generi</h3>
+			<ul class="list-unstyled row row-cols-1 row-cols-md-2 g-3 mt-0">
+				<li class="d-inline-block" v-for="show in datiShow" :key="show.id">
+					<show_card :show_card="show" />
+				</li>
+			</ul>
 		</div>
 		<div
 			v-for="genre in genreList"
 			:key="genre.genre"
-			class="row row-cols-1 row-cols-md-2 g-3 tab-pane fade"
+			class="tab-pane fade"
 			:id="genre.genre"
 			role="tabpanel"
 			:aria-labelledby="genre.genre + '-tab'"
 			tabindex="0">
-			<show_card
-				class="d-inline-block"
-				v-for="show in showsByGenre"
-				:key="show.id"
-				:show_card="show" />
+			<h3 class="visually-hidden">{{ genre.genre }}</h3>
+			<ul class="list-unstyled row row-cols-1 row-cols-md-2 g-3 mt-0">
+				<li class="d-inline-block" v-for="show in showsByGenre" :key="show.id">
+					<show_card :show_card="show" />
+				</li>
+			</ul>
 		</div>
 	</div>
 </template>
 
 <style scope lang="scss">
-.nav {
+#genreNav {
 	.nav-link {
 		color: #f8e559;
 		&.active {

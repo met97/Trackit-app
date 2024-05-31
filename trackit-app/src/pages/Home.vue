@@ -40,24 +40,20 @@ export default defineComponent({
 	<!-- In Evidenza -->
 	<div class="row mx-0">
 		<h2>In evidenza</h2>
-		<ul class="list-unstyled">
-			<div class="row row-cols-2 row-cols-lg-4 g-3 mt-0">
-				<featured_card
-					v-for="show in featuredShow"
-					:key="show.id"
-					:featured_card="show" />
-			</div>
+		<ul class="list-unstyled row row-cols-2 row-cols-lg-4 g-3 mt-0">
+			<li v-for="show in featuredShow" :key="show.id">
+				<featured_card :featured_card="show" />
+			</li>
 		</ul>
 	</div>
 	<!-- Suggeriti -->
 	<div class="row mx-0">
 		<h2>Suggeriti</h2>
-		<div class="row row-cols-1 row-cols-md-2 g-3 mt-0">
-			<show_card
-				v-for="show in suggestedShow"
-				:key="show.id"
-				:show_card="show" />
-		</div>
+		<ul class="list-unstyled row row-cols-1 row-cols-md-2 g-3 mt-0">
+			<li v-for="show in suggestedShow" :key="show.id">
+				<show_card :show_card="show" />
+			</li>
+		</ul>
 	</div>
 </template>
 

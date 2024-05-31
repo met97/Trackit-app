@@ -13,27 +13,25 @@ export default defineComponent({
 </script>
 
 <template>
-	<li class="">
-		<div class="col">
-			<div class="card text-bg-dark p-0">
-				<router-link :to="'/show/' + featured_card.id" class="stretched-link"
-					><img
-						:src="'/covers/' + featured_card.image"
-						class="card-img"
-						:alt="featured_card.title + ' cover'"
-				/></router-link>
-				<div class="card-img-overlay">
-					<h3 class="h5 card-title">{{ featured_card.title }}</h3>
-					<p class="card-text d-none">
-						{{ featured_card.description }}
-					</p>
-					<p class="card-text d-none">
-						<small>{{ featured_card.year }}</small>
-					</p>
-				</div>
+	<div class="col">
+		<div class="card text-bg-dark p-0">
+			<router-link :to="'/show/' + featured_card.id" class="stretched-link"
+				><img
+					:src="'/covers/' + featured_card.image"
+					class="card-img"
+					:alt="featured_card.title + ' cover'"
+			/></router-link>
+			<div class="card-img-overlay">
+				<h5 class="card-title">{{ featured_card.title }}</h5>
+				<p class="card-text d-none">
+					{{ featured_card.description }}
+				</p>
+				<p class="card-text d-none">
+					<small>{{ featured_card.year }}</small>
+				</p>
 			</div>
 		</div>
-	</li>
+	</div>
 </template>
 
 <style scoped lang="scss">
