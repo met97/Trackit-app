@@ -2,18 +2,18 @@
 INSERT INTO director (id, name) VALUES (1,'Vince Gilligan'), (2, 'Craig Mazin'), (3, 'David Benioff'), (4, 'David Chase'), (5, 'J. Michael Mendel'), (6, 'Coky Giedroyc'), (7, 'Marta Kauffman'), (8, 'Raphael Bob-Waksberg'), (9, 'Baran bo Odar'), (10, 'Hwang Dong-hyuk'), (11, 'Shinsuke Sato');
 
 -- Inserimento di dati nella tabella `tvshow`
-INSERT INTO tvshow (id, title, description, year, country, director, seasons, episodes) VALUES
-(1, 'Breaking Bad', 'Un insegnante di chimica del liceo diagnosticato con un cancro al polmone inoperabile si rivolge alla produzione e alla vendita di metanfetamina per garantire il futuro della sua famiglia', 2008, 'Stati Uniti', 1, 5, 62), 
-(2, 'Chernobyl', 'Nell aprile 1986, un esplosione presso la centrale nucleare di Chernobyl nell Unione delle Repubbliche socialiste sovietiche diventa una delle peggiori catastrofi provocate dall uomo al mondo.', 2019, 'Stati Uniti', 2, 1, 5),
-(3, 'Il trono di spade', 'Nove famiglie nobili combattono per il controllo delle mitiche terre di Westeros, mentre un antico nemico ritorna dopo essere stato inattivo per migliaia di anni.', 2011, 'Stati Uniti', 3, 8, 74),
-(4, 'I Soprano', 'Il capo della mafia del New Jersey Tony Soprano affronta i suoi problemi personali e professionali che influenzano il suo stato mentale, portandolo a cercare una consulenza psichiatrica professionale.', 1999, 'Stati Uniti', 4, 6, 86),
-(5, 'Rick and Morty', 'Una serie animata seguendo le imprese di un super scienziato e del suo nipote non troppo brillante.', 2013, 'Stati Uniti', 5, 7, 71),
-(6, 'Sherlock', 'Un aggiornamento moderno con il famoso investigatore e il suo medico che risolvono il crimine nella Londra del 21esimo secolo.', 2010, 'Stati Uniti', 6, 4, 12),
-(7, 'Friends', 'Le vite personali e professionali di sei amici ventenni e trentenni che vivono a Manhattan.', 1994, 'Stati Uniti', 7, 10, 236),
-(8, 'Bojack Horseman', 'BoJack Horseman era il protagonista del famoso show televisivo "Horsin Around" negli anni 90, ma ora è sfinito, vive a Hollywood, si lamenta di tutto e indossa maglioni colorati.', 2014, 'Stati Uniti', 8, 6, 77),
-(9, 'Dark', 'Una saga familiare con un pizzico di soprannaturale, ambientata in una città tedesca, dove la scomparsa di due bambini rivela le relazioni tra quattro famiglie.', 2017, 'Germania', 9, 3, 26),
-(10, 'Squid Game', '456 concorrenti disperati gareggiano gli uni contro gli altri in vari giochi per bambini nel tentativo di sopravvivere e vincere il montepremi di 45,6 miliardi di won che potrebbe trasformare la loro triste esistenza.', 2021, 'Corea', 10, 1, 9),
-(11, 'Alice in Borderland', 'Apatico, senza un lavoro e con l ossessione per i videogiochi, Arisu si ritrova all improvviso in un insolita Tokyo svuotata dei suoi abitanti dove è costretto a partecipare a giochi pericolosi con i suoi amici per sopravvivere.', 2020, 'Giappone', 11, 2, 16);
+INSERT INTO tvshow (id, image, title, description, year, country, director, seasons, episodes) VALUES
+(1, 'breakingbad.jpeg', 'Breaking Bad', 'Un insegnante di chimica del liceo diagnosticato con un cancro al polmone inoperabile si rivolge alla produzione e alla vendita di metanfetamina per garantire il futuro della sua famiglia', 2008, 'Stati Uniti', 1, 5, 62), 
+(2, 'chernobyl.jpeg', 'Chernobyl', 'Nell aprile 1986, un esplosione presso la centrale nucleare di Chernobyl nell Unione delle Repubbliche socialiste sovietiche diventa una delle peggiori catastrofi provocate dall uomo al mondo.', 2019, 'Stati Uniti', 2, 1, 5),
+(3, 'got.jpeg', 'Il trono di spade', 'Nove famiglie nobili combattono per il controllo delle mitiche terre di Westeros, mentre un antico nemico ritorna dopo essere stato inattivo per migliaia di anni.', 2011, 'Stati Uniti', 3, 8, 74),
+(4, 'sopranos.jpeg', 'I Soprano', 'Il capo della mafia del New Jersey Tony Soprano affronta i suoi problemi personali e professionali che influenzano il suo stato mentale, portandolo a cercare una consulenza psichiatrica professionale.', 1999, 'Stati Uniti', 4, 6, 86),
+(5, 'rickandmorty.jpeg', 'Rick and Morty', 'Una serie animata seguendo le imprese di un super scienziato e del suo nipote non troppo brillante.', 2013, 'Stati Uniti', 5, 7, 71),
+(6, 'sherlock.jpeg', 'Sherlock', 'Un aggiornamento moderno con il famoso investigatore e il suo medico che risolvono il crimine nella Londra del 21esimo secolo.', 2010, 'Stati Uniti', 6, 4, 12),
+(7, 'friends.jpeg', 'Friends', 'Le vite personali e professionali di sei amici ventenni e trentenni che vivono a Manhattan.', 1994, 'Stati Uniti', 7, 10, 236),
+(8, 'bojack.jpeg', 'Bojack Horseman', 'BoJack Horseman era il protagonista del famoso show televisivo "Horsin Around" negli anni 90, ma ora è sfinito, vive a Hollywood, si lamenta di tutto e indossa maglioni colorati.', 2014, 'Stati Uniti', 8, 6, 77),
+(9, 'dark.jpeg', 'Dark', 'Una saga familiare con un pizzico di soprannaturale, ambientata in una città tedesca, dove la scomparsa di due bambini rivela le relazioni tra quattro famiglie.', 2017, 'Germania', 9, 3, 26),
+(10, 'squidgame.jpeg', 'Squid Game', '456 concorrenti disperati gareggiano gli uni contro gli altri in vari giochi per bambini nel tentativo di sopravvivere e vincere il montepremi di 45,6 miliardi di won che potrebbe trasformare la loro triste esistenza.', 2021, 'Corea', 10, 1, 9),
+(11, 'aliceinborder.jpeg', 'Alice in Borderland', 'Apatico, senza un lavoro e con l ossessione per i videogiochi, Arisu si ritrova all improvviso in un insolita Tokyo svuotata dei suoi abitanti dove è costretto a partecipare a giochi pericolosi con i suoi amici per sopravvivere.', 2020, 'Giappone', 11, 2, 16);
 
 -- Inserimento di dati nella tabella `show_has_genre`
 INSERT INTO genre (genre) VALUES 
