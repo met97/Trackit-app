@@ -9,7 +9,7 @@ exports.connection = mysql2_1.default.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "Trackit-test",
+    database: "Trackit",
     port: 3310,
 });
 //funzionalità mysql2 per usare placeholder nominativi anziché "?"

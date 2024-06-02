@@ -4,7 +4,7 @@ export const connection: Connection = mysql.createConnection({
 	host: "localhost",
 	user: "root",
 	password: "",
-	database: "Trackit-test",
+	database: "Trackit",
 	port: 3310,
 });
 
