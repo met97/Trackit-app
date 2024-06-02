@@ -114,6 +114,11 @@ export default defineComponent({
 
 <style scope lang="scss">
 #genreNav {
+	overflow-x: scroll;
+
+	ul {
+		scrollbar-color: yellow rgba(0, 0, 0, 0);
+	}
 	.nav-link {
 		color: #f8e559;
 		&.active {
